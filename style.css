@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+}
+
+.container {
+   
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.todo-container {
+  width: 450px;
+  background-color: skyblue;
+  margin-top: 20px;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.todo-list {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.todo-list input {
+  width: 80%;
+  height: 30px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #222;
+  outline: none;
+  border: 1px solid #222;
+}
+
+.todo-list input::placeholder {
+  color: #222;
+}
+
+.todo-list button {
+  width: 20%;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: orange;
+  color: #222;
+  border: none;
+  border-radius: 16px;
+  padding: 5px;
+  border: 1px solid #222;
+  cursor: pointer;
+}
+
+.data-container {
+ 
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.paragraph {
+  margin-top: 15px;
+  width: 314px;
+  height: 30px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #222;
+}
+
+.del-btn i {
+  background-color: tomato;
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 30px;
+  margin-top: 15px;
+  border: 1px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width : 576px) {
+   body{
+    width: auto;
+   }
+
+   .container h1{
+    font-size: 30px;
+   }
+
+   .todo-container{
+    width: auto;
+   }
+
+   .paragraph{
+    width: 215px;
+   }
+
+   .del-btn i{
+    width: 58px;
+   }
+   
+}
